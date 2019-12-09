@@ -28,6 +28,12 @@ int main(void)
     				MotorDC_Speed_PollingWithT0(speed);
     			}
     		}
+    		MotorDC_Dir(MOT_1,FORWARD);
+    		MotorDC_Dir(MOT_2,STOP);
+    		for(delay=0;delay<1000;delay++){
+				MotorDC_Speed_PollingWithT0(70);
+			}
+
     		repeat = 1;
     	}
 	}
